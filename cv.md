@@ -2,11 +2,13 @@
 
 ## Summary
 
-***First Name:*** *Kseniya*
+**First Name:** Kseniya
  
-***Last Name:*** *Sokolovskaya*
+**Last Name:** Sokolovskaya
  
-***Primary skills :*** *HTML, CSS, JS(React)*
+**Primary skills :** HTML, CSS, JS(React)
  
-***English:*** *B1*
+**English:** B1
+
+
 
