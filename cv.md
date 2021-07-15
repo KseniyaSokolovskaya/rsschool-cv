@@ -20,4 +20,13 @@
 **Skype:** kseniyasokolovskaya
 
 
+## About me
+
+My goal is more practice and improving js.
+
+I had been working as frontend developer for one year.
+
+My short-goal is to learn JS patterns and get hads-on experience in React
+
+
 
