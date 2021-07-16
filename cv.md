@@ -80,6 +80,26 @@ I’m focused, self-driven person who constantly striving for self-development a
 
 <br/>
 
+## Skills
+
+| Professional skills              | Level    | Years of use |
+| -------------------------------- | -------- | ------------ |
+| JS                           |
+| Core js                          | Advanced | 1            |
+| React                            | Novice   | 1            |
+| Redux                            | Novice   | 1            |
+| User experience design (UXD) |
+| HTML                             | Advanced | 1            |
+| CSS3                             | Advanced | 1            |
+| SASS/SCSS                        | Advanced | 1            |
+| Material UI                      | Advanced | 1            |
+| Version control system       |
+| Git                              | Novice   | 1            |
+| Graphic editor               |
+| Adobe Photoshop                  | Advanced | 1            |
+
+<br/>
+
 ## Code example
     import { useState } from 'react';
     import PropTypes from 'prop-types';
