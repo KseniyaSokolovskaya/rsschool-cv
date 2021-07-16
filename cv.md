@@ -77,3 +77,22 @@ I’m focused, self-driven person who constantly striving for self-development a
 **Technologies:** JS, JQuery, Gulp, SCSS, ESLint, AJAX, Google Maps Api Tools: VSCode, git, GitHub
 
 **Task Performed:** development; analyzing, estimate and fixing bugs and performance issues; refactoring; implementing
+
+<br/>
+
+## Code example
+    import { useState } from 'react';
+    import PropTypes from 'prop-types';
+
+
+    const useLightBox = (isOpen) => {
+      const [modalOpen, setModalOpen] = useState(isOpen);
+      const toggle = () => setModalOpen(!modalOpen);
+      return [modalOpen, setModalOpen, toggle];
+    };
+
+    useLightBox.propTypes = {
+      isOpen: PropTypes.bool.isRequired,
+    };
+
+    export default useLightBox;
