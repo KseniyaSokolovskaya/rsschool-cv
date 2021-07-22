@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta id="viewport" content="initial-scale=1.0" />
+    <meta name="author" content="Kseniya Sokolovskaya" />
     <link rel="stylesheet" href="styles/index.css" />
     <title>CV</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Curriculum Vitae</h1>
+        <nav>
+          <ul>
+            <li><a href="#summary" class="nav-link">Summary</a></li>
+            <li>
+              <a href="#contacts" class="nav-link">Contact Information</a>
+            </li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Work experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#example" class="nav-link">Code example</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <h2><a href="#" id="summary">Summary</a></h2>
+          <p>First Name : Kseniya</p>
+          <p>Last Name: Sokolovskaya</p>
+          <p>Primary skills: HTML, CSS, JS(React)</p>
+          <p>English: B1</p>
+        </section>
+        <section>
+          <h2><a href="#" id="contacts">Contact Information</a></h2>
+          <p>Cell: <a href="tel:+375296201325">+375296201325</a></p>
+          <p>
+            Email: <a href="mailto:deff.1990@gmail.com">deff.1990@gmail.com</a>
+          </p>
+          <p>
+            Skype:
+            <a href="skype:kseniyasokolovskaya?call">kseniyasokolovskaya</a>
+          </p>
+        </section>
+        <section>
+          <h2><a href="#" id="about">About me</a></h2>
+          <p>
+            A dedicated web-designer with a hands-on experience in creating
+            adaptive and crossbrowser templates, single page application and
+            perfect-pixel PSD-to-HTML coding too.
+          </p>
+          <p>
+            I am familiar with float and grid techniques, however I prefer to
+            use flexbox.
+          </p>
+          <p>
+            I have a professional expertise in native JS, React; moreover I have
+            an experience of working with SCSS, JQuery, Gulp, Webpack, React and
+            Redux. I use GIT for version control.
+          </p>
+          <p>
+            My short-term goal is to learn JS pattern and get hands-on
+            experience React.
+          </p>
+          <p>
+            I’m focused, self-driven person who constantly striving for
+            self-development and vocational trainings. I am looking for a
+            company with a friendly team and interesting projects where I can
+            get new experience and learn new tricks and techniques.
+          </p>
+        </section>
+        <section>
+          <h2><a href="#" id="experience">Work Experience</a></h2>
+          <h3>HiQo-solutions (Aug-2019 - Sep-2020)::</h3>
+          <section>
+            <h4>(Feb-2020 - Present) HiQo Coins Application</h4>
+            <p>Job-Position: Front-end developer</p>
+            <p>Customer: HiQo solutions</p>
+            <p>
+              Team size: Project Lead, 2 Back-end Developer, Front-end developer
+            </p>
+            <p>Project Role: Front-end developer</p>
+            <p>
+              Technologies: Webpack, React/React-router/Redux, Material UI,
+              ESLint, SCSS Tools: VSCode, git, GitHub
+            </p>
+            <p>
+              Task Performed: investigate project, improve React/Redux knowledge
+            </p>
+          </section>
+          <section>
+            <h4>(Aug-2019 -Dec-2019)</h4>
+            <ul>
+              <li><a href="https://www.ashtonwoods.com/">AshtonWoods</a></li>
+              <li><a href="https://www.belgard.com/">Belgard</a></li>
+              <li>
+                <a href="https://forum.cartercenter.org/">CarterCenter</a>
+              </li>
+              <li>Starlighthomes</li>
+            </ul>
+            <p>Job-Position: Junior Front-end developer</p>
+            <p>
+              Customer: Definition6
+              <a href="https://www.definition6.com/"
+                >https://www.definition6.com/</a
+              >
+            </p>
+            <p>
+              Team size: Project Lead, Back-end Developer, Front-end developer
+            </p>
+            <p>Project Role: Front-end developer</p>
+            <p>
+              Technologies: JS, JQuery, Gulp, SCSS, ESLint, AJAX, Google Maps
+              Api Tools: VSCode, git, GitHub
+            </p>
+            <p>
+              Task Performed: development; analyzing, estimate and fixing bugs
+              and performance issues; refactoring; implementing
+            </p>
+          </section>
+        </section>
+        <section>
+          <h2><a href="#" id="skills">Skills</a></h2>
+          <ul>
+            <li>
+              JS
+              <ul>
+                <li>Core JS</li>
+                <li>React</li>
+                <li>Redux</li>
+              </ul>
+            </li>
+            <li>
+              User experience design (UXD)
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>SASS/SCSS</li>
+                <li>Material UI</li>
+              </ul>
+            </li>
+            <li>
+              Version control system
+              <ul>
+                <li>Git</li>
+              </ul>
+            </li>
+            <li>
+              Graphic editor
+              <ul>
+                <li>Adobe Photoshop</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2><a href="#" id="example">Code example</a></h2>
+          <code>
+            import { useState } from 'react';<br />
+            import PropTypes from 'prop-types';<br />
+            <br />
+            <br />
+            const useLightBox = (isOpen) => {<br />
+            &nbsp;const [modalOpen, setModalOpen] = useState(isOpen);<br />
+            &nbsp;const toggle = () => setModalOpen(!modalOpen);<br />
+            &nbsp;return [modalOpen, setModalOpen, toggle];<br />
+            };<br />
+            <br />
+            useLightBox.propTypes = {<br />
+            &nbsp;isOpen: PropTypes.bool.isRequired,<br />
+            };<br />
+            <br />
+            export default useLightBox;<br />
+          </code>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
 </html>
