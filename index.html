@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta id="viewport" content="initial-scale=1.0" />
     <meta name="author" content="Kseniya Sokolovskaya" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,100&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,100&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <title>CV</title>
   </head>
+
   <body>
     <div class="wrapper">
-      <header>
+      <header class="header">
         <h1>Curriculum Vitae</h1>
-        <nav>
+        <div class="header-title">
+          <figure>
+            <img class="profile-photo" src="assets/avatar.jpeg" alt="profile_photo">
+          </figure>
+          <figcaption>
+            <h2 class="user">Kseniya Sokolovskaya</h2>
+            <h3 class="position-name">Front End Developer</h3>
+          </figcaption>
+        </div>
+        <nav class="nav">
           <ul>
-            <li><a href="#summary" class="nav-link">Summary</a></li>
+            <li>
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
             <li>
               <a href="#contacts" class="nav-link">Contact Information</a>
             </li>
@@ -25,138 +47,148 @@
           </ul>
         </nav>
       </header>
-      <main>
-        <section>
-          <h2><a href="#" id="summary">Summary</a></h2>
-          <p>First Name : Kseniya</p>
-          <p>Last Name: Sokolovskaya</p>
-          <p>Primary skills: HTML, CSS, JS(React)</p>
-          <p>English: B1</p>
+      <main class="main">
+        <section class="section">
+          <h4><a href="#" id="summary">Summary</a></h4>
+          <div class="content">
+            <p>First Name : Kseniya</p>
+            <p>Last Name: Sokolovskaya</p>
+            <p>Primary skills: HTML, CSS, JS(React)</p>
+            <p>English: B1</p>
+          </div>
         </section>
         <section>
-          <h2><a href="#" id="contacts">Contact Information</a></h2>
-          <p>Cell: <a href="tel:+375296201325">+375296201325</a></p>
-          <p>
-            Email: <a href="mailto:deff.1990@gmail.com">deff.1990@gmail.com</a>
-          </p>
-          <p>
-            Skype:
-            <a href="skype:kseniyasokolovskaya?call">kseniyasokolovskaya</a>
-          </p>
-        </section>
-        <section>
-          <h2><a href="#" id="about">About me</a></h2>
-          <p>
-            A dedicated web-designer with a hands-on experience in creating
-            adaptive and crossbrowser templates, single page application and
-            perfect-pixel PSD-to-HTML coding too.
-          </p>
-          <p>
-            I am familiar with float and grid techniques, however I prefer to
-            use flexbox.
-          </p>
-          <p>
-            I have a professional expertise in native JS, React; moreover I have
-            an experience of working with SCSS, JQuery, Gulp, Webpack, React and
-            Redux. I use GIT for version control.
-          </p>
-          <p>
-            My short-term goal is to learn JS pattern and get hands-on
-            experience React.
-          </p>
-          <p>
-            I’m focused, self-driven person who constantly striving for
-            self-development and vocational trainings. I am looking for a
-            company with a friendly team and interesting projects where I can
-            get new experience and learn new tricks and techniques.
-          </p>
-        </section>
-        <section>
-          <h2><a href="#" id="experience">Work Experience</a></h2>
-          <h3>HiQo-solutions (Aug-2019 - Sep-2020)::</h3>
-          <section>
-            <h4>(Feb-2020 - Present) HiQo Coins Application</h4>
-            <p>Job-Position: Front-end developer</p>
-            <p>Customer: HiQo solutions</p>
-            <p>
-              Team size: Project Lead, 2 Back-end Developer, Front-end developer
-            </p>
-            <p>Project Role: Front-end developer</p>
-            <p>
-              Technologies: Webpack, React/React-router/Redux, Material UI,
-              ESLint, SCSS Tools: VSCode, git, GitHub
-            </p>
-            <p>
-              Task Performed: investigate project, improve React/Redux knowledge
-            </p>
-          </section>
-          <section>
-            <h4>(Aug-2019 -Dec-2019)</h4>
-            <ul>
-              <li><a href="https://www.ashtonwoods.com/">AshtonWoods</a></li>
-              <li><a href="https://www.belgard.com/">Belgard</a></li>
-              <li>
-                <a href="https://forum.cartercenter.org/">CarterCenter</a>
-              </li>
-              <li>Starlighthomes</li>
-            </ul>
-            <p>Job-Position: Junior Front-end developer</p>
-            <p>
-              Customer: Definition6
-              <a href="https://www.definition6.com/"
-                >https://www.definition6.com/</a
-              >
-            </p>
-            <p>
-              Team size: Project Lead, Back-end Developer, Front-end developer
-            </p>
-            <p>Project Role: Front-end developer</p>
-            <p>
-              Technologies: JS, JQuery, Gulp, SCSS, ESLint, AJAX, Google Maps
-              Api Tools: VSCode, git, GitHub
-            </p>
-            <p>
-              Task Performed: development; analyzing, estimate and fixing bugs
-              and performance issues; refactoring; implementing
-            </p>
-          </section>
-        </section>
-        <section>
-          <h2><a href="#" id="skills">Skills</a></h2>
-          <ul>
-            <li>
-              JS
-              <ul>
-                <li>Core JS</li>
-                <li>React</li>
-                <li>Redux</li>
-              </ul>
-            </li>
-            <li>
-              User experience design (UXD)
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>SASS/SCSS</li>
-                <li>Material UI</li>
-              </ul>
-            </li>
-            <li>
-              Version control system
-              <ul>
-                <li>Git</li>
-              </ul>
-            </li>
-            <li>
-              Graphic editor
-              <ul>
-                <li>Adobe Photoshop</li>
-              </ul>
-            </li>
+          <h4>
+            <a href="#" id="contacts">Contact Information</a>
+          </h4>
+          <ul class="contacts">
+            <li>Cell: <a href="tel:+375296201325">+375296201325</a></li>
+            <li>Email: <a href="mailto:deff.1990@gmail.com">deff.1990@gmail.com</a></li>
+            <li>Skype: <a href="skype:kseniyasokolovskaya?call">kseniyasokolovskaya</a>/li>
           </ul>
         </section>
-        <section>
-          <h2><a href="#" id="example">Code example</a></h2>
+        <section class="section">
+          <h4><a href="#" id="about">About me</a></h4>
+          <div class="content">
+            <p>
+              A dedicated web-designer with a hands-on experience in creating
+              adaptive and crossbrowser templates, single page application and
+              perfect-pixel PSD-to-HTML coding too.
+            </p>
+            <p>
+              I am familiar with float and grid techniques, however I prefer to
+              use flexbox.
+            </p>
+            <p>
+              I have a professional expertise in native JS, React; moreover I have
+              an experience of working with SCSS, JQuery, Gulp, Webpack, React and
+              Redux. I use GIT for version control.
+            </p>
+            <p>
+              My short-term goal is to learn JS pattern and get hands-on
+              experience React.
+            </p>
+            <p>
+              I’m focused, self-driven person who constantly striving for
+              self-development and vocational trainings. I am looking for a
+              company with a friendly team and interesting projects where I can
+              get new experience and learn new tricks and techniques.
+            </p>
+          </div>
+        </section>
+        <section class="section">
+          <h4><a href="#" id="experience">Work Experience</a></h4>
+          <h5>HiQo-solutions (Aug-2019 - Sep-2020)::</h5>
+          <section>
+            <h6>(Feb-2020 - Present) HiQo Coins Application</h6>
+            <div class="content">
+              <p>Job-Position: Front-end developer</p>
+              <p>Customer: HiQo solutions</p>
+              <p>
+                Team size: Project Lead, 2 Back-end Developer, Front-end developer
+              </p>
+              <p>Project Role: Front-end developer</p>
+              <p>
+                Technologies: Webpack, React/React-router/Redux, Material UI,
+                ESLint, SCSS Tools: VSCode, git, GitHub
+              </p>
+              <p>
+                Task Performed: investigate project, improve React/Redux knowledge
+              </p>
+            </div>
+          </section>
+          <section>
+            <h6>(Aug-2019 -Dec-2019)</h6>
+            <div class="content">
+
+              <ul>
+                <li><a href="https://www.ashtonwoods.com/">AshtonWoods</a></li>
+                <li><a href="https://www.belgard.com/">Belgard</a></li>
+                <li>
+                  <a href="https://forum.cartercenter.org/">CarterCenter</a>
+                </li>
+                <li>Starlighthomes</li>
+              </ul>
+              <p>Job-Position: Junior Front-end developer</p>
+              <p>
+                Customer: Definition6
+                <a href="https://www.definition6.com/">https://www.definition6.com/</a>
+              </p>
+              <p>
+                Team size: Project Lead, Back-end Developer, Front-end developer
+              </p>
+              <p>Project Role: Front-end developer</p>
+              <p>
+                Technologies: JS, JQuery, Gulp, SCSS, ESLint, AJAX, Google Maps
+                Api Tools: VSCode, git, GitHub
+              </p>
+              <p>
+                Task Performed: development; analyzing, estimate and fixing bugs
+                and performance issues; refactoring; implementing
+              </p>
+            </div>
+          </section>
+        </section>
+        <section class="section">
+          <h4><a href="#" id="skills">Skills</a></h4>
+          <div class="content">
+            <ul>
+              <li>
+                JS
+                <ul>
+                  <li>Core JS</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                </ul>
+              </li>
+              <li>
+                User experience design (UXD)
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>SASS/SCSS</li>
+                  <li>Material UI</li>
+                </ul>
+              </li>
+              <li>
+                Version control system
+                <ul>
+                  <li>Git</li>
+                </ul>
+              </li>
+              <li>
+                Graphic editor
+                <ul>
+                  <li>Adobe Photoshop</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section">
+          <h4>
+            <a href="#" id="example">Code example</a>
+          </h4>
           <code>
             import { useState } from 'react';<br />
             import PropTypes from 'prop-types';<br />
@@ -176,7 +208,26 @@
           </code>
         </section>
       </main>
-      <footer></footer>
+      <footer class="footer section">
+        <ul class="footer-list">
+          <li>
+            <ul class="contacts">
+              <li>Cell: <a href="tel:+375296201325">+375296201325</a></li>
+              <li>Email: <a href="mailto:deff.1990@gmail.com">deff.1990@gmail.com</a></li>
+              <li>Skype: <a href="skype:kseniyasokolovskaya?call">kseniyasokolovskaya</a>/li>
+            </ul>
+
+          </li>
+          <li>
+            <a href="https://github.com/KseniyaSokolovskaya">GitHub: Kseniya Sokolovskaya</a>
+          </li>
+          <li>
+            <a href="https://rs.school/js/"><img src="/assets/rs_school_js.svg" alt="link-school" width="30"></a>
+          </li>
+        </ul>
+        <a href=""></a>
+      </footer>
     </div>
   </body>
+
 </html>
