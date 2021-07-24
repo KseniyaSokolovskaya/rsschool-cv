@@ -34,30 +34,41 @@ p {
   padding: 30px 0;
 }
 .header-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   background-color: var(--main-color);
+  padding: 70px 0;
 }
+
 
 .header-title figure {
-  padding: 0;
-  margin: 0;
-}
+  position: absolute;
+  top: 0;
+  left: 0;
 
-.profile-photo {
-  width: 300px;
-  border-radius: 50%;
-  padding: 10px;
-  border: 5px solid var(--second-bg-color);
 }
 
 .header-title figcaption {
+  margin: 30px 0 30px 30px;
+  background-color: var(--second-bg-color);
+  text-align: center;
+  padding: 30px 0;
+}
+
+.profile-photo {
+  width: 250px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px;
+  border: 5px solid var(--second-bg-color);
+}
+
+
+.wrapper-figcaption {
   padding: 30px 0;
   flex: 1 0 auto;
   text-align: center;
   background-color: var(--second-bg-color);
+  position: relative;
 }
 
 .user {
