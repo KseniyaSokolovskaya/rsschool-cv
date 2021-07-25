@@ -2,10 +2,9 @@
 <html lang="en">
 
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta id="viewport" content="initial-scale=1.0" />
-    <meta name="author" content="Kseniya Sokolovskaya" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,100&display=swap"
@@ -24,13 +23,13 @@
       <header class="header">
         <h1>Curriculum Vitae</h1>
         <div class="header-title">
-          <figure>
+          <div class="profile">
             <img class="profile-photo" src="assets/avatar.jpeg" alt="profile_photo">
-          </figure>
-          <figcaption>
-            <h2 class="user">Kseniya Sokolovskaya</h2>
+          </div>
+          <div class="profile-position">
+            <h2>Kseniya Sokolovskaya</h2>
             <h3 class="position-name">Front End Developer</h3>
-          </figcaption>
+          </div>
         </div>
         <nav class="nav">
           <ul>
@@ -51,21 +50,23 @@
         <section class="section">
           <h4><a href="#" id="summary">Summary</a></h4>
           <div class="content">
-            <p>First Name : Kseniya</p>
-            <p>Last Name: Sokolovskaya</p>
-            <p>Primary skills: HTML, CSS, JS(React)</p>
-            <p>English: B1</p>
+            <p><b>First Name:</b> Kseniya</p>
+            <p><b>Last Name:</b> Sokolovskaya</p>
+            <p><b>Primary skills:</b> HTML, CSS, JS(React)</p>
+            <p><b>English:</b> B1</p>
           </div>
         </section>
         <section>
           <h4>
             <a href="#" id="contacts">Contact Information</a>
           </h4>
-          <ul class="contacts">
-            <li>Cell: <a href="tel:+375296201325">+375296201325</a></li>
-            <li>Email: <a href="mailto:deff.1990@gmail.com">deff.1990@gmail.com</a></li>
-            <li>Skype: <a href="skype:kseniyasokolovskaya?call">kseniyasokolovskaya</a>/li>
-          </ul>
+          <div class="content">
+            <ul class="contacts">
+              <li><b>Cell: </b><a href="tel:+375296201325">+375296201325</a></li>
+              <li><b>Email: </b><a href="mailto:deff.1990@gmail.com">deff.1990@gmail.com</a></li>
+              <li><b>Skype: </b><a href="skype:kseniyasokolovskaya?call">kseniyasokolovskaya</a></li>
+            </ul>
+          </div>
         </section>
         <section class="section">
           <h4><a href="#" id="about">About me</a></h4>
@@ -98,27 +99,29 @@
         </section>
         <section class="section">
           <h4><a href="#" id="experience">Work Experience</a></h4>
-          <h5>HiQo-solutions (Aug-2019 - Sep-2020)::</h5>
+          <div class="content">
+            <h5>HiQo-solutions (Aug-2019 - Sep-2020):</h5>
+            <section>
+              <h6>(Feb-2020 - Present) HiQo Coins Application:</h6>
+              <div class="content">
+                <p><b>Job-Position:</b> Front-end developer</p>
+                <p><b>Customer:</b> HiQo solutions</p>
+                <p>
+                  <b>Team size:</b> Project Lead, 2 Back-end Developer, Front-end developer
+                </p>
+                <p><b>Project Role:</b> Front-end developer</p>
+                <p>
+                  <b>Technologies:</b> Webpack, React/React-router/Redux, Material UI,
+                  ESLint, SCSS Tools: VSCode, git, GitHub
+                </p>
+                <p>
+                  <b>Task Performed:</b> investigate project, improve React/Redux knowledge
+                </p>
+              </div>
+            </section>
+          </div>
           <section>
-            <h6>(Feb-2020 - Present) HiQo Coins Application</h6>
-            <div class="content">
-              <p>Job-Position: Front-end developer</p>
-              <p>Customer: HiQo solutions</p>
-              <p>
-                Team size: Project Lead, 2 Back-end Developer, Front-end developer
-              </p>
-              <p>Project Role: Front-end developer</p>
-              <p>
-                Technologies: Webpack, React/React-router/Redux, Material UI,
-                ESLint, SCSS Tools: VSCode, git, GitHub
-              </p>
-              <p>
-                Task Performed: investigate project, improve React/Redux knowledge
-              </p>
-            </div>
-          </section>
-          <section>
-            <h6>(Aug-2019 -Dec-2019)</h6>
+            <h6>(Aug-2019 -Dec-2019):</h6>
             <div class="content">
 
               <ul>
@@ -129,21 +132,22 @@
                 </li>
                 <li>Starlighthomes</li>
               </ul>
-              <p>Job-Position: Junior Front-end developer</p>
+              <p><b>Job-Position:</b> Junior Front-end developer</p>
               <p>
-                Customer: Definition6
+                <b>Customer:</b> Definition6
                 <a href="https://www.definition6.com/">https://www.definition6.com/</a>
               </p>
               <p>
-                Team size: Project Lead, Back-end Developer, Front-end developer
+                <b>Team size:</b> Project Lead, Back-end Developer, Front-end developer
               </p>
-              <p>Project Role: Front-end developer</p>
+              <p><b>Project Role:</b> Front-end developer
+              </p>
               <p>
-                Technologies: JS, JQuery, Gulp, SCSS, ESLint, AJAX, Google Maps
+                <b>Technologies:</b> JS, JQuery, Gulp, SCSS, ESLint, AJAX, Google Maps
                 Api Tools: VSCode, git, GitHub
               </p>
               <p>
-                Task Performed: development; analyzing, estimate and fixing bugs
+                <b>Task Performed:</b> development; analyzing, estimate and fixing bugs
                 and performance issues; refactoring; implementing
               </p>
             </div>
@@ -189,40 +193,30 @@
           <h4>
             <a href="#" id="example">Code example</a>
           </h4>
-          <code>
-            import { useState } from 'react';<br />
-            import PropTypes from 'prop-types';<br />
-            <br />
-            <br />
-            const useLightBox = (isOpen) => {<br />
-            &nbsp;const [modalOpen, setModalOpen] = useState(isOpen);<br />
-            &nbsp;const toggle = () => setModalOpen(!modalOpen);<br />
-            &nbsp;return [modalOpen, setModalOpen, toggle];<br />
-            };<br />
-            <br />
-            useLightBox.propTypes = {<br />
-            &nbsp;isOpen: PropTypes.bool.isRequired,<br />
-            };<br />
-            <br />
-            export default useLightBox;<br />
-          </code>
+          <div class="content">
+            <a href="https://github.com/KseniyaSokolovskaya/hiqo-sokolovskaya-markup">Markup</a>
+          </div>
         </section>
       </main>
       <footer class="footer section">
         <ul class="footer-list">
           <li>
             <ul class="contacts">
-              <li>Cell: <a href="tel:+375296201325">+375296201325</a></li>
-              <li>Email: <a href="mailto:deff.1990@gmail.com">deff.1990@gmail.com</a></li>
-              <li>Skype: <a href="skype:kseniyasokolovskaya?call">kseniyasokolovskaya</a>/li>
+              <li><b>Cell: </b><a href="tel:+375296201325">+375296201325</a></li>
+              <li><b>Email: </b><a href="mailto:deff.1990@gmail.com">deff.1990@gmail.com</a></li>
+              <li><b>Skype: </b><a href="skype:kseniyasokolovskaya?call">kseniyasokolovskaya</a></li>
             </ul>
 
           </li>
           <li>
-            <a href="https://github.com/KseniyaSokolovskaya">GitHub: Kseniya Sokolovskaya</a>
+            <a href="https://github.com/KseniyaSokolovskaya"><b>GitHub:</b> Kseniya Sokolovskaya</a>
           </li>
           <li>
-            <a href="https://rs.school/js/"><img src="/assets/rs_school_js.svg" alt="link-school" width="30"></a>
+            2021
+          </li>
+          <li>
+            <a href="https://rs.school/js/"><img src="assets/rs_school_js.svg" alt="link-school" width="100"
+                height="100"></a>
           </li>
         </ul>
         <a href=""></a>
