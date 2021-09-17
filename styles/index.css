@@ -1,13 +1,21 @@
 :root {
   --main-color: #484848;
   --second-color: #2d2d2d;
-  --main-bg-color: #ffffff;
-  --second-bg-color: #fecb00;
+  --primary-color:#ffffff;
+  --main-bg-color: rgba(255, 255, 255, 0.15);
+  --second-bg-color: rgb(255, 196, 0);
+  --second-opacity-bg-color: rgba(255, 196, 0, 0.8);
+
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--main-color);
+  background-attachment: fixed;
+  background-color: var(--main-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1058%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(51%2c 51%2c 51%2c 1)'%3e%3c/rect%3e%3ccircle r='93.335' cx='23.54' cy='31.54' stroke='%23474646' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='93.335' cx='291.12' cy='441.17' stroke='%23474646' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='93.335' cx='752.49' cy='677.57' stroke='%23474646' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='112.845' cx='1135.34' cy='21.55' stroke='%23474646' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='130.235' cx='1248.22' cy='489.1' stroke='%23474646' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='134.44' cx='1425.92' cy='151.32' stroke='%23474646' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='66.08' cx='476.64' cy='462.98' stroke='%23474646' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='59.345' cx='330.42' cy='94.55' stroke='%23474646' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='106.78' cx='81.94' cy='496.44' stroke='%23474646' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='181.155' cx='908.26' cy='250.79' stroke='%23474646' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1058'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
 }
 
 h1 {
@@ -63,31 +71,50 @@ b {
 .wrapper {
   max-width: 900px;
   margin: 0 auto;
+
 }
 
 .section {
   padding: 30px 0;
 }
 
+.header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .header-title {
   position: relative;
-  background-color: var(--main-color);
-  padding: 65px 0;
+  margin: auto 0;
 }
 
 .profile {
   position: absolute;
-  top: 0;
+  top: -60px;
   left: 0;
 }
 
 .profile-position {
-  margin: 30px 0 30px 25%;
+  margin: 85px 0 100px 15%;
   background-color: var(--second-bg-color);
   text-align: center;
   padding: 30px 0;
+  position: relative;
 }
-
+.profile-position::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -60px;
+  left: -125px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url('../assets/avatar.jpeg');
+  background-size: contain;
+  box-shadow: 0 0 0 5px var(--main-color), 0 0 0 10px var(--second-bg-color);
+}
 .profile-photo {
   width: 250px;
   border-radius: 50%;
@@ -110,13 +137,15 @@ b {
   width: 25%;
   background-color: var(--second-bg-color);
   align-items: stretch;
+  text-align: center;
 }
 
 .nav ul li a {
-  display: block;
+  display: flex;
   width: 100%;
-  height: 100%;
-  text-align: center;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav ul li a:hover {
@@ -124,9 +153,25 @@ b {
   color: var(--second-bg-color);
 }
 
-.main {
-  padding: 0 10%;
-  background: wheat;
+
+.header .section,
+.header .content {
+  color: var(--second-color);
+}
+
+.self-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--main-bg-color);
+}
+.self-information a {
+  color: var(--second-bg-color);
+}
+
+.self-information .section {
+  margin: 15px 15px;
+  flex-basis: 45%;
 }
 
 section h4 {
@@ -140,8 +185,30 @@ section h2 a {
   color: var(--second-color);
 }
 
+.main .section {
+  min-height: 100vh;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section.experience {
+  margin: 10px 0;
+  padding: 20px;
+  background-color: var(--second-opacity-bg-color);
+}
+
 .content {
   padding: 15px 0 5px;
+}
+
+.section.about {
+  margin: 10px 0;
+  color: var(--primary-color);
+}
+.section.about a {
+  color: var(--primary-color);
 }
 
 .experience-list {
@@ -150,6 +217,19 @@ section h2 a {
   padding: 5px 0;
 }
 
+.section.skills {
+  margin: 10px 0;
+  color: var(--primary-color);
+}
+.section.skills .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section.skills a {
+  color: var(--primary-color);
+}
 .skills ul {
   list-style: circle;
   margin-left: 15px;
@@ -158,6 +238,10 @@ section h2 a {
 .skills ul ul {
   list-style: disc;
   margin-left: 15px;
+}
+
+.example {
+  background-color: var(--second-opacity-bg-color);
 }
 
 .footer {
