@@ -283,15 +283,16 @@ section h2 a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  align-items: center;
   padding: 30px 20px ;
   margin: 30px 0;
   cursor: pointer;
 }
 
 .portfolio__description {
-  width: 50%;
+  align-items: stretch;
   text-align: right;
+  width: 25%;
 }
 
 .example {
@@ -416,16 +417,11 @@ section h2 a {
   }
 
   .portfolio__items img {
-    width: 100%;
-  }
-
-  .portfolio__item a {
-    flex-direction: column;
+    width: 60%;
   }
 
   .portfolio__description {
-    text-align: left;
-    order: -1;
+    width: 30%;
   }
 
   .footer.section{
@@ -475,6 +471,18 @@ section h2 a {
     padding: 10px 0;
   }
 
+  .portfolio__items img {
+    width: 60%;
+  }
+  .portfolio__item a {
+    padding: 0;
+  }
+
+  .portfolio__description {
+    width: 38%;
+    text-align: left;
+  }
+
 }
 
 @media (max-width: 556px) {
@@ -493,8 +501,16 @@ section h2 a {
     padding: 0;
   }
 
+  .portfolio__items img {
+    width: 30%;
+  }
   .portfolio__item a {
     padding: 0;
+  }
+
+  .portfolio__description {
+    width: 68%;
+    text-align: left;
   }
 
 }
