@@ -89,40 +89,27 @@ b {
   justify-content: space-between;
 }
 .header-title {
-  position: relative;
-  margin: auto 0;
-}
-
-.profile {
-  position: absolute;
-  top: -60px;
-  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  margin: 45px 0 45px;
 }
 
 .profile-position {
-  margin: 85px 0 100px 15%;
+  flex: 1;
   background-color: var(--second-bg-color);
   text-align: center;
   padding: 30px 0;
   position: relative;
 }
-.profile-position::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: calc(50% - 125px);
-  left: calc(0% - 125px);
+.avatar {
+  position: relative;
+  left: 15px;
+  z-index: 1;
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url('../assets/avatar.jpeg');
-  background-size: contain;
-  box-shadow: 0 0 0 5px var(--main-color), 0 0 0 10px var(--second-bg-color);
-}
-.profile-photo {
-  width: 250px;
-  border-radius: 50%;
-  margin: 15px;
   box-shadow: 0 0 0 5px var(--main-color), 0 0 0 10px var(--second-bg-color);
 }
 
@@ -348,33 +335,19 @@ section h2 a {
   color: var(--second-bg-color);
 }
 
-@media (max-width: 900px) {
-  .profile-position::before {
-    top: calc(50% - 100px);
-    left: calc(0% - 100px);
-    width: 200px;
-    height: 200px;
-  }
-}
 
 @media (max-width: 750px) {
+  .header-title {
+    margin: 45px 0 -15px;
+  }
 
   .profile-position {
-    margin: 190px 0 29px 0;
-    padding: 45px 0 20px;
+    margin: 0 0 20px;
+    padding: 20px 0;
   }
-  .profile-position::before {
-    top: calc(-100% - 50px);
-    left: calc(50% - 100px);
+  .avatar {
     width: 200px;
     height: 200px;
-  }
-}
-
-@media (max-width: 750px) {
-  .profile-position {
-    margin: 190px 0 10px 0;
-    padding: 45px 0 20px;
   }
 
   .nav  {
@@ -389,6 +362,7 @@ section h2 a {
   .portfolio__items img {
     width: 100%;
   }
+
   .portfolio__item a {
     flex-direction: column;
   }
@@ -401,32 +375,53 @@ section h2 a {
   .footer.section{
     padding: 10px 20px;
   }
+
   .footer-list {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
   }
 
 }
 
-@media (max-width: 520px) {
+
+@media (max-width: 630px) {
+  .header-title {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin:  0;
+  }
+
+  .profile-position {
+    padding: 40px 0 10px;
+    margin-bottom: 0;
+  }
+
+  .avatar {
+    top: 50px;
+    left: calc(50% - 80px);
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+
+  .self-information .section{
+    margin: 0 15px;
+  }
+
+  .section h4 {
+    padding: 10px 0;
+  }
+
+}
+
+@media (max-width: 556px) {
   h2 {
     font-size: 20px;
   }
   h3 {
     font-size: 18px;
-  }
-  .profile-position {
-    margin: 160px 0 10px 0;
-    padding: 40px 0 20px;
-  }
-
-  .profile-position::before {
-    top: calc(-50% - 80px);
-    left: calc(50% - 80px);;
-    width: 160px;
-    height: 160px;
   }
 
   .self-information {
@@ -436,7 +431,9 @@ section h2 a {
   .section  {
     padding: 0;
   }
-  .section h4 {
-    padding: 10px 0;
+
+  .portfolio__item a {
+    padding: 0;
   }
+
 }
