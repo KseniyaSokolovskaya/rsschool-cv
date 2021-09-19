@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,100&display=swap"
@@ -21,15 +24,37 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <h1>Curriculum Vitae</h1>
         <div class="header-title">
-          <div class="profile">
-            <img class="profile-photo" src="assets/avatar.jpeg" alt="profile_photo">
+          <div>
+            <img src="./assets/avatar.jpeg" alt="avatar" class="avatar">
           </div>
           <div class="profile-position">
             <h2>Kseniya Sokolovskaya</h2>
             <h3 class="position-name">Front End Developer</h3>
           </div>
+        </div>
+        <div class="navbar">
+          <input type="checkbox" name="navbar" id="dropdown">
+          <label for="dropdown">
+            <span class="hamburger-menu">
+              <span class="line line_1"></span>
+              <span class="line line_2"></span>
+              <span class="line line_3"></span>
+            </span>
+          </label>
+          <ul>
+            <li>
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
+            <li>
+              <a href="#contacts" class="nav-link">Contact Information</a>
+            </li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Work experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#example" class="nav-link">Code example</a></li>
+          </ul>
         </div>
         <nav class="nav">
           <ul>
@@ -42,33 +67,38 @@
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#experience" class="nav-link">Work experience</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
             <li><a href="#example" class="nav-link">Code example</a></li>
           </ul>
         </nav>
+        <section class="self-information">
+          <h1>Curriculum Vitae</h1>
+          <section class="section">
+            <h4><a href="#" id="summary">Summary</a></h4>
+            <div class="content">
+              <p><b>First Name:</b> Kseniya</p>
+              <p><b>Last Name:</b> Sokolovskaya</p>
+              <p><b>Primary skills:</b> HTML, CSS, JS(React)</p>
+              <p><b>English:</b> B1</p>
+            </div>
+          </section>
+          <section class="section">
+            <h4>
+              <a href="#" id="contacts">Contact Information</a>
+            </h4>
+            <div class="content">
+              <ul class="contacts">
+                <li><b>Cell: </b><a href="tel:+375296201325">+375296201325</a></li>
+                <li><b>Email: </b><a href="mailto:deff.1990@gmail.com">deff.1990@gmail.com</a></li>
+                <li><b>Skype: </b><a href="skype:kseniyasokolovskaya?call">kseniyasokolovskaya</a></li>
+              </ul>
+            </div>
+          </section>
+
+        </section>
       </header>
       <main class="main">
-        <section class="section">
-          <h4><a href="#" id="summary">Summary</a></h4>
-          <div class="content">
-            <p><b>First Name:</b> Kseniya</p>
-            <p><b>Last Name:</b> Sokolovskaya</p>
-            <p><b>Primary skills:</b> HTML, CSS, JS(React)</p>
-            <p><b>English:</b> B1</p>
-          </div>
-        </section>
-        <section>
-          <h4>
-            <a href="#" id="contacts">Contact Information</a>
-          </h4>
-          <div class="content">
-            <ul class="contacts">
-              <li><b>Cell: </b><a href="tel:+375296201325">+375296201325</a></li>
-              <li><b>Email: </b><a href="mailto:deff.1990@gmail.com">deff.1990@gmail.com</a></li>
-              <li><b>Skype: </b><a href="skype:kseniyasokolovskaya?call">kseniyasokolovskaya</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="section">
+        <section class="section about">
           <h4><a href="#" id="about">About me</a></h4>
           <div class="content">
             <p>
@@ -97,7 +127,7 @@
             </p>
           </div>
         </section>
-        <section class="section">
+        <section class="section experience">
           <h4><a href="#" id="experience">Work Experience</a></h4>
           <div class="content">
             <h5>HiQo-solutions (Aug-2019 - Sep-2020):</h5>
@@ -188,12 +218,58 @@
             </ul>
           </div>
         </section>
-        <section class="section">
+        <section class="section portfolio">
+          <h4>
+            <a href="#" id="portfolio">Portfolio</a>
+          </h4>
+          <ul class="portfolio__items">
+            <li class="portfolio__item portfolio__item_museum">
+              <a href="https://rolling-scopes-school.github.io/kseniyasokolovskaya-JSFEPRESCHOOL/museum/">
+                <img src="assets/museum.png" alt="museum">
+                <div class="portfolio__description">
+                  <h5 class="portfolio__title">Museum markup</h5>
+                  <p>HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item portfolio__item_slider">
+              <a href="https://rolling-scopes-school.github.io/kseniyasokolovskaya-JSFEPRESCHOOL/vertical-slider/">
+                <img src="assets/slider.png" alt="slider">
+                <div class="portfolio__description">
+                  <h5 class="portfolio__title">Vertical slider</h5>
+                  <p>HTML, CSS, JS</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item portfolio__item_gallery">
+              <a href="https://kseniyasokolovskaya.github.io/examples/gallery-of-cards/">
+                <img src="assets/gallery.png" alt="gallery">
+                <div class="portfolio__description">
+                  <h5 class="portfolio__title">Gallery of cards</h5>
+                  <p>HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="section example">
           <h4>
             <a href="#" id="example">Code example</a>
           </h4>
           <div class="content">
-            <a href="https://github.com/KseniyaSokolovskaya/hiqo-sokolovskaya-markup">Markup</a>
+            <pre><code class="js">
+exports.min = function min(array) {
+  return (!array || array.length === 0) ? 0 : array.sort((a, b) => a - b)[0];
+}
+
+exports.max = function max(array) {
+  return (!array || array.length === 0) ? 0 : array.sort((a, b) => b - a)[0];
+}
+
+exports.avg = function avg(array) {
+  return (!array || array.length === 0) ? 0 : array.reduce((item, current) => item + current) / array.length;
+}
+            </code></pre>
           </div>
         </section>
       </main>
@@ -220,6 +296,24 @@
         <a href=""></a>
       </footer>
     </div>
+    <script>
+      console.log('Total score(150/160):  видео-резюме отсутствует');
+      console.log('1. вёрстка валидная +10');
+      console.log('2. вёрстка семантическая +20');
+      console.log('3. для оформления СV используются css-стили +10');
+      console.log('4. контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы +10');
+      console.log('5. вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10');
+      console.log('6. есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным. Внешний вид адаптивного меню можно скопировать с макета музея +10');
+      console.log('7. на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым) +10');
+      console.log('8. контакты для связи и перечень навыков оформлены в виде списка ul > li +10');
+      console.log('9. CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10');
+      console.log('10. CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода. Для подсветки кода может использоваться js-библиотека, например, highlight.js +10');
+      console.log('11. CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10');
+      console.log('12. CV выполнено на английском языке +10');
+      console.log('13. выполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт) +10');
+      console.log('14. дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10');
+
+    </script>
   </body>
 
 </html>
